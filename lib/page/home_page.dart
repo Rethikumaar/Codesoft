@@ -11,9 +11,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final _controller = TextEditingController();
   List toDoList = [
-    ['Code With Me', true],
+    ['Go Walk ', true],
     ['Learn Flutter', true],
-    ['Drink Coffee', false],
+    ['Learn Java', false],
     ['Explore Firebase', false],
   ];
 
@@ -39,13 +39,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple.shade300,
+      backgroundColor: Colors.yellowAccent.shade400,
       appBar: AppBar(
         title: const Text(
           'Simple Todo',
         ),
-        backgroundColor: Colors.deepPurple,
-        foregroundColor: Colors.white,
+        backgroundColor: Colors.yellowAccent,
+        foregroundColor: Colors.black,
       ),
       body: ListView.builder(
         itemCount: toDoList.length,
@@ -72,16 +72,16 @@ class _HomePageState extends State<HomePage> {
                   decoration: InputDecoration(
                     hintText: 'Add a new todo items',
                     filled: true,
-                    fillColor: Colors.deepPurple.shade200,
+                    fillColor: Colors.yellowAccent.shade200,
                     enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(
-                        color: Colors.deepPurple,
+                        color: Colors.yellowAccent,
                       ),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(
-                        color: Colors.deepPurple,
+                        color: Colors.yellowAccent,
                       ),
                       borderRadius: BorderRadius.circular(15),
                     ),
